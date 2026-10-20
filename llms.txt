@@ -1,0 +1,33 @@
+# ImBIOS Skills
+
+> Agent skills for WhatsApp messaging via WAHA (WhatsApp HTTP API). Start with the skill index below.
+
+## Skills
+
+- [waha-compose](skills/messaging/waha-compose/SKILL.md): Compose WhatsApp messages for WAHA session gateways with native formatting, anti-ban compliance, and phone-screen readability. Use when writing, rewriting, formatting, or reviewing any WAHA sendText body, sendImage caption, reply, group mention, or broadcast text.
+  - [Formatting reference](skills/messaging/waha-compose/references/formatting.md): WhatsApp native marks (`*bold*`, `_italic_`, `~strike~`, code, quotes, lists) and WAHA render fields (`linkPreview`, `mentions`, captions).
+  - [Compliance reference](skills/messaging/waha-compose/references/compliance.md): WAHA anti-ban rules (reply-first, opt-in, human pacing, errors 463 and 475) plus a pre-send checklist.
+  - [Readability reference](skills/messaging/waha-compose/references/readability.md): phone-screen message patterns (notification, reminder, promo, group mention).
+  - [Human docs](docs/messaging/waha-compose.md): what it does, when to reach for it, common questions.
+
+## Install
+
+```bash
+npx skills@latest add ImBIOS/skills --skill waha-compose
+```
+
+Claude Code (plugin route):
+
+```bash
+claude plugin marketplace add ImBIOS/skills
+claude plugin install imbios-skills@imbios
+```
+
+## Repo map (mirrors mattpocock/skills)
+
+- `skills/<bucket>/<name>/SKILL.md`: the skill (frontmatter `name` + `description`).
+- `skills/<bucket>/<name>/agents/openai.yaml`: display name and invocation policy.
+- `skills/<bucket>/<name>/references/`: deep guidance loaded as needed.
+- `skills/<bucket>/README.md`: bucket index.
+- `docs/<bucket>/<name>.md`: human-facing page (What it does, When to reach for it, Common questions, It's working if).
+- `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`: plugin manifests.
