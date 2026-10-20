@@ -1,0 +1,21 @@
+{
+  "name": "imbios-skills",
+  "version": "0.1.0",
+  "description": "ImBIOS agent skills: WAHA message composition and more.",
+  "author": {
+    "name": "ImBIOS",
+    "url": "https://github.com/ImBIOS"
+  },
+  "homepage": "https://github.com/ImBIOS/skills",
+  "repository": "https://github.com/ImBIOS/skills",
+  "license": "MIT",
+  "keywords": [
+    "waha",
+    "whatsapp",
+    "messaging",
+    "skills"
+  ],
+  "skills": [
+    "./skills/messaging/waha-compose"
+  ]
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "WAHA Compose"
+  short_description: "Format WAHA messages that stay compliant and read well"
+policy:
+  allow_implicit_invocation: true

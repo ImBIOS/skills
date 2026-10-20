@@ -1,0 +1,21 @@
+{
+  "name": "imbios",
+  "owner": {
+    "name": "ImBIOS",
+    "url": "https://github.com/ImBIOS"
+  },
+  "description": "ImBIOS agent skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "imbios-skills",
+      "source": "./",
+      "description": "ImBIOS agent skills (WAHA message composition and more).",
+      "category": "messaging",
+      "keywords": [
+        "waha",
+        "whatsapp",
+        "messaging"
+      ]
+    }
+  ]
+}
