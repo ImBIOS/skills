@@ -28,6 +28,7 @@ Do this before any final record:
 2. `screenshot iter-00.png`, act, `screenshot iter-01.png`, act, `screenshot iter-02.png`.
 3. Read each PNG yourself, confirm distinct beats with no dead air and no unwanted nav (example: stay on forkhub.imbios.dev, do not exit to GitHub).
 4. If any frame is static or off site, tighten waits and actions, repeat.
+5. Methods for other targets (desktop, window, area, element crop, OCU): [screenshots.md](references/screenshots.md).
 
 Only record the sequence that screenshots prove.
 
@@ -47,7 +48,7 @@ ffmpeg -i demo.webm -c:v libx264 -pix_fmt yuv420p demo.mp4 -y
 ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 demo.mp4
 ```
 
-Keep under 10s, 3 beats, cursor on. Details in [ffmpeg.md](references/ffmpeg.md). Script: [scripts/record-tab.sh](scripts/record-tab.sh).
+Keep under 10s, 3 beats, cursor on. Details in [ffmpeg.md](references/ffmpeg.md). Cursor include/exclude plus zoom (live keys and post zoompan) in [cursor-zoom.md](references/cursor-zoom.md). Script: [scripts/record-tab.sh](scripts/record-tab.sh).
 
 ### 4. Desktop record (OCU plus ffmpeg)
 
