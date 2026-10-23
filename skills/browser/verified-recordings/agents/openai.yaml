@@ -1,0 +1,5 @@
+interface:
+  display_name: "Verified Recordings"
+  short_description: "Screenshot verified tab and desktop video demos"
+policy:
+  allow_implicit_invocation: true

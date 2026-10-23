@@ -1,7 +1,7 @@
 {
   "name": "imbios-skills",
   "version": "0.1.0",
-  "description": "ImBIOS agent skills: WAHA message composition and more.",
+  "description": "ImBIOS agent skills: WAHA message composition, verified browser recordings.",
   "author": {
     "name": "ImBIOS",
     "url": "https://github.com/ImBIOS"
@@ -13,9 +13,13 @@
     "waha",
     "whatsapp",
     "messaging",
+    "browser",
+    "recording",
+    "agent-browser",
     "skills"
   ],
   "skills": [
-    "./skills/messaging/waha-compose"
+    "./skills/messaging/waha-compose",
+    "./skills/browser/verified-recordings"
   ]
 }

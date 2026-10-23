@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/ImBIOS/skills)](https://skills.sh/ImBIOS/skills)
 
-Agent skills for WhatsApp messaging via WAHA (WhatsApp HTTP API). First skill: WAHA message composition (formatting, anti-ban compliance, readability).
+Agent skills for WhatsApp messaging via WAHA (WhatsApp HTTP API) and verified browser demo recordings (agent-browser tab capture, OCU desktop capture, X video posts).
 
 WAHA is the self-hosted WhatsApp HTTP API session gateway (send via `POST /api/sendText` with a `session` and `chatId`). It is not the Meta Cloud API, so there are no official message templates to submit. What WAHA needs instead is messages that render correctly in WhatsApp, follow WhatsApp anti-spam behavior so the number does not get restricted, and read well on a phone screen. That is what `waha-compose` gives an AI agent.
 
@@ -13,6 +13,10 @@ Repo layout follows [mattpocock/skills](https://github.com/mattpocock/skills): s
 ### Messaging
 
 - **[waha-compose](./skills/messaging/waha-compose/SKILL.md)**: Compose WhatsApp messages for WAHA session gateways with native formatting, anti-ban compliance, and phone-screen readability. Covers sendText bodies, image captions, replies, group mentions, and short broadcasts.
+
+### Browser
+
+- **[verified-recordings](./skills/browser/verified-recordings/SKILL.md)**: Record correct demo videos with agent-browser tab capture or OCU plus ffmpeg desktop capture, verified by screenshots. Covers tab demos, TigerVNC :1 desktop, and X compose video upload.
 
 ## FAQ
 
