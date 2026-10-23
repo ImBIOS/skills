@@ -20,6 +20,7 @@
   ],
   "skills": [
     "./skills/messaging/waha-compose",
-    "./skills/browser/verified-recordings"
+    "./skills/browser/verified-recordings",
+    "./skills/browser/website-scroll"
   ]
 }

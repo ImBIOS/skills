@@ -17,6 +17,7 @@ Repo layout follows [mattpocock/skills](https://github.com/mattpocock/skills): s
 ### Browser
 
 - **[verified-recordings](./skills/browser/verified-recordings/SKILL.md)**: Record correct demo videos with agent-browser tab capture or OCU plus ffmpeg desktop capture, verified by screenshots. Covers tab demos, TigerVNC :1 desktop, and X compose video upload.
+- **[website-scroll](./skills/browser/website-scroll/SKILL.md)**: Record a top-to-bottom scroll reel of any public page with poster frame.
 
 ## FAQ
 
