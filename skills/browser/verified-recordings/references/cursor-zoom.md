@@ -14,16 +14,18 @@ agent-browser record start ./demo.webm --cursor --fps 30
 
 ## Zoom during recording
 
-No zoom command exists. Two paths, verified:
+No zoom command exists. Two paths, both verified live:
 
-- Headed or focused window: `press ctrl+plus` steps and `press ctrl+0` reset are captured like any interaction.
-- Headless: keyboard zoom does nothing. Zoom with CSS instead, stepped for visible motion:
+- Smooth animated zoom (recommended): CSS transform with a transition, captured at 30fps. Verified frames show the zoom mid flight plus cursor plus scroll in one 2.6s take:
 
 ```bash
-agent-browser eval "document.body.style.zoom = 1.15"
-agent-browser wait 1000
-agent-browser eval "document.body.style.zoom = 1.3"
+agent-browser eval "document.body.style.transition='transform 1.2s ease-in-out'; document.body.style.transformOrigin='50% 35%'; document.body.style.transform='scale(1.4)'"
+agent-browser wait 1500
 ```
+
+Reset with transition none plus transform none plus zoom 1 before the next take.
+
+- Headed or focused window only: `press ctrl+plus` steps and `press ctrl+0` reset. Does nothing headless.
 
 ## Zoom in post
 

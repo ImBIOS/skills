@@ -63,3 +63,9 @@ Confirm `:1` with `DISPLAY=:1 xdpyinfo`. Script: [scripts/record-desktop.sh](scr
 ### 5. Post video to X
 
 Flow in [x-upload.md](references/x-upload.md): open compose, fill textbox, `upload @eFiles demo.mp4`, wait for `Ready`, click `Post`. If video is static, delete the post, tighten, reshoot. Evidence is `ffprobe` duration plus file sizes.
+
+## Related work
+
+- Paralect product-demo skill: ScreenStudio style, real Playwright browser driving the real UI, cursor plus chrome plus wallpaper drawn on top, take scripts. Staged and polished; this skill stays unstaged and screenshot verified instead.
+- Tyler Germain screen-recordings skill (YouTube walkthrough): keyframed smooth zooms and pans, Screen Studio look, 60fps.
+- Clipy / MCPBundles: recorder MCPs aimed at bug reports, timestamped narration plus frame links.
