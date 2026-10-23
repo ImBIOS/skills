@@ -14,14 +14,16 @@ agent-browser record start ./demo.webm --cursor --fps 30
 
 ## Zoom during recording
 
-No zoom command exists. Page zoom works through keys and is captured like any interaction:
+No zoom command exists. Two paths, verified:
+
+- Headed or focused window: `press ctrl+plus` steps and `press ctrl+0` reset are captured like any interaction.
+- Headless: keyboard zoom does nothing. Zoom with CSS instead, stepped for visible motion:
 
 ```bash
-agent-browser press ctrl+plus    # zoom in steps
-agent-browser press ctrl+0       # reset to 100 percent
+agent-browser eval "document.body.style.zoom = 1.15"
+agent-browser wait 1000
+agent-browser eval "document.body.style.zoom = 1.3"
 ```
-
-Use sparingly inside a take (each step is a beat). Prefer settling on one zoom before `record start`.
 
 ## Zoom in post
 
