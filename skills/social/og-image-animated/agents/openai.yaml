@@ -1,0 +1,5 @@
+interface:
+  display_name: "OG Image Animated"
+  short_description: "Animate the static share card into a short looping reveal as MP4 and GIF"
+policy:
+  allow_implicit_invocation: true

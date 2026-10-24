@@ -1,6 +1,6 @@
 # ImBIOS Skills
 
-> Agent skills for WhatsApp messaging via WAHA (WhatsApp HTTP API). Start with the skill index below.
+> Agent skills for WhatsApp messaging via WAHA (WhatsApp HTTP API), design mocks, social share cards, launch clips, and article images. Start with the skill index below.
 
 ## Skills
 
@@ -9,6 +9,23 @@
   - [Compliance reference](skills/messaging/waha-compose/references/compliance.md): WAHA anti-ban rules (reply-first, opt-in, human pacing, errors 463 and 475) plus a pre-send checklist.
   - [Readability reference](skills/messaging/waha-compose/references/readability.md): phone-screen message patterns (notification, reminder, promo, group mention).
   - [Human docs](docs/messaging/waha-compose.md): what it does, when to reach for it, common questions.
+- [verified-recordings](skills/browser/verified-recordings/SKILL.md): Record correct demo videos with agent-browser tab capture or OCU plus ffmpeg desktop capture, verified by screenshots. Use for browser tab demos, TigerVNC :1 desktop demos, and X video posts.
+- [website-scroll](skills/browser/website-scroll/SKILL.md): Record a top-to-bottom scroll reel of any public page with poster frame. Covers the same use case as the Paralect website scroll skill with an original agent-browser implementation.
+- [landing-page](skills/design/landing-page/SKILL.md): Generate a polished hero landing page with a working product demo block as one self-contained HTML file.
+- [saas-dashboard](skills/design/saas-dashboard/SKILL.md): Generate a single self-contained HTML dashboard with KPIs, SVG chart, and sortable table.
+- [bento-features](skills/design/bento-features/SKILL.md): Generate an HTML bento grid where each cell is a working miniature of one feature.
+- [saas-logo](skills/design/saas-logo/SKILL.md): Design flat geometric logo concepts in SVG and export mark plus app-icon PNGs.
+- [low-res-mockup](skills/design/low-res-mockup/SKILL.md): Generate a skeleton wireframe of a screen with placeholder blocks instead of copy.
+- [og-image](skills/social/og-image/SKILL.md): Generate the static 1200x630 share card from real UI and wire its meta tags.
+- [og-image-animated](skills/social/og-image-animated/SKILL.md): Animate the static share card into a short looping reveal as MP4 and GIF.
+- [og-image-live](skills/social/og-image-live/SKILL.md): Make a 5 second share clip with scripted product motion inside the card.
+- [website-screenshot-reel](skills/social/website-screenshot-reel/SKILL.md): Turn a URL list into a hero slideshow as MP4 and GIF.
+- [product-demo](skills/social/product-demo/SKILL.md): Record a polished guided demo of the running app as MP4 with a poster frame.
+- [article-image](skills/content/article-image/SKILL.md): Turn a paragraph into a blog illustration in a chosen house style (8 styles).
+
+## Paralect parity note
+
+The design, social, and content buckets cover the same use cases as https://www.paralect.com/skills. Those skills carry no license grant, so everything here is an original implementation with no copied text or code. Each skill links back to its Paralect counterpart. Not affiliated with Paralect.
 
 ## Install
 

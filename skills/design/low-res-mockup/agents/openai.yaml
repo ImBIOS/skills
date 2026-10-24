@@ -1,0 +1,5 @@
+interface:
+  display_name: "Low Res Mockup"
+  short_description: "Generate skeleton wireframes that show layout before copy exists"
+policy:
+  allow_implicit_invocation: true

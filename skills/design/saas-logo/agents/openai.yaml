@@ -1,0 +1,5 @@
+interface:
+  display_name: "SaaS Logo"
+  short_description: "Design flat geometric logo concepts in SVG and export mark plus icon PNGs"
+policy:
+  allow_implicit_invocation: true

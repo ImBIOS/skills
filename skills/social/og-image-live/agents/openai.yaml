@@ -1,0 +1,5 @@
+interface:
+  display_name: "OG Image Live"
+  short_description: "Record a 5 second share clip with scripted product motion inside the card"
+policy:
+  allow_implicit_invocation: true

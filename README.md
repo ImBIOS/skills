@@ -19,6 +19,30 @@ Repo layout follows [mattpocock/skills](https://github.com/mattpocock/skills): s
 - **[verified-recordings](./skills/browser/verified-recordings/SKILL.md)**: Record correct demo videos with agent-browser tab capture or OCU plus ffmpeg desktop capture, verified by screenshots. Covers tab demos, TigerVNC :1 desktop, and X compose video upload.
 - **[website-scroll](./skills/browser/website-scroll/SKILL.md)**: Record a top-to-bottom scroll reel of any public page with poster frame.
 
+### Design
+
+- **[landing-page](./skills/design/landing-page/SKILL.md)**: Generate a polished hero landing page with a working demo of the product interface as a single self-contained HTML file.
+- **[saas-dashboard](./skills/design/saas-dashboard/SKILL.md)**: Generate a single self-contained HTML dashboard that reads like a real shipped product screen.
+- **[bento-features](./skills/design/bento-features/SKILL.md)**: Generate an HTML bento grid where every cell is a working miniature of one feature.
+- **[saas-logo](./skills/design/saas-logo/SKILL.md)**: Design flat geometric logo concepts in SVG and export the pick as transparent mark plus app-icon PNGs.
+- **[low-res-mockup](./skills/design/low-res-mockup/SKILL.md)**: Generate a stripped-back skeleton wireframe of a screen before copy and visuals exist.
+
+### Social
+
+- **[og-image](./skills/social/og-image/SKILL.md)**: Generate the static 1200x630 share card from the real product UI and wire its meta tags.
+- **[og-image-animated](./skills/social/og-image-animated/SKILL.md)**: Turn the static share card into a short looping reveal as MP4 and GIF.
+- **[og-image-live](./skills/social/og-image-live/SKILL.md)**: Make a 5 second share clip with scripted product motion inside the card.
+- **[website-screenshot-reel](./skills/social/website-screenshot-reel/SKILL.md)**: Turn a list of URLs into a crisp hero slideshow as MP4 and GIF.
+- **[product-demo](./skills/social/product-demo/SKILL.md)**: Record a polished guided demo of the running app as MP4 with a poster frame.
+
+### Content
+
+- **[article-image](./skills/content/article-image/SKILL.md)**: Turn a paragraph into the blog illustration it runs with, in a chosen house style.
+
+## Paralect catalog parity and license note
+
+The design, social, and content buckets above cover the same use cases as the Paralect skills catalog (https://www.paralect.com/skills): landing page, SaaS dashboard, bento features, SaaS logo, low res mockup, OpenGraph image, animated and live OG variants, screenshot reel, website scroll, product demo, and blog post image with its style variants. Paralect publishes no license grant for its skill text or scripts (site footer: 2026 Paralect, Inc, all rights default reserved), so every skill here is an original clean-room implementation: same functional scope, our own words, our own scripts, no copied prompts or code. Each skill page links back to the corresponding Paralect page for attribution. This repo is not affiliated with Paralect.
+
 ## FAQ
 
 **Is there an agent skill for composing WhatsApp messages for WAHA?**

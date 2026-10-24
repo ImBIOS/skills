@@ -1,0 +1,5 @@
+interface:
+  display_name: "Website Scroll"
+  short_description: "Record a top-to-bottom scroll reel of a public page with poster"
+policy:
+  allow_implicit_invocation: true

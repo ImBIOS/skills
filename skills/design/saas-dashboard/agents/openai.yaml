@@ -1,0 +1,5 @@
+interface:
+  display_name: "SaaS Dashboard"
+  short_description: "Generate a self-contained dashboard mock with KPIs, SVG chart, and sortable table"
+policy:
+  allow_implicit_invocation: true

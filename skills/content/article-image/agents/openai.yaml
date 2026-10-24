@@ -1,0 +1,5 @@
+interface:
+  display_name: "Article Image"
+  short_description: "Illustrate a blog paragraph in a consistent house style"
+policy:
+  allow_implicit_invocation: true

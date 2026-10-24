@@ -1,7 +1,7 @@
 {
   "name": "imbios-skills",
   "version": "0.1.0",
-  "description": "ImBIOS agent skills: WAHA message composition, verified browser recordings.",
+  "description": "ImBIOS agent skills: WAHA message composition, verified browser recordings, design mocks, social share cards, launch clips, and article images.",
   "author": {
     "name": "ImBIOS",
     "url": "https://github.com/ImBIOS"
@@ -16,11 +16,30 @@
     "browser",
     "recording",
     "agent-browser",
+    "landing-page",
+    "dashboard",
+    "bento",
+    "logo",
+    "wireframe",
+    "og-image",
+    "product-demo",
+    "article-image",
     "skills"
   ],
   "skills": [
     "./skills/messaging/waha-compose",
     "./skills/browser/verified-recordings",
-    "./skills/browser/website-scroll"
+    "./skills/browser/website-scroll",
+    "./skills/design/landing-page",
+    "./skills/design/saas-dashboard",
+    "./skills/design/bento-features",
+    "./skills/design/saas-logo",
+    "./skills/design/low-res-mockup",
+    "./skills/social/og-image",
+    "./skills/social/og-image-animated",
+    "./skills/social/og-image-live",
+    "./skills/social/website-screenshot-reel",
+    "./skills/social/product-demo",
+    "./skills/content/article-image"
   ]
 }

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Landing Page"
+  short_description: "Generate a self-contained SaaS landing page with a working product demo block"
+policy:
+  allow_implicit_invocation: true
