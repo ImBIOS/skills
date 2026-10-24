@@ -15,6 +15,8 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 Need: product description (one paragraph, or name plus feature list). Optional: color scheme (dark or light). If the scheme is missing, pick based on product mood (dev tools lean dark, SMB SaaS leans light) and state the choice.
 
+Invent every word on the page: headline, subhead, CTAs, feature names, metrics, testimonial, prices. Reference screenshots or galleries may inform layout only; their words are never reused, not even headlines or button labels.
+
 ### 2. Draft the page plan
 
 Before writing code, fix: headline (outcome, not feature list), subhead (one sentence), primary CTA plus secondary CTA, 3 proof elements (metric, logo row, testimonial), demo block contents (the 3 or 4 UI elements the fake product shows), and section order. Keep total under 6 sections so the file stays reviewable.

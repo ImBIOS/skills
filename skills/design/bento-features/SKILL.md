@@ -15,6 +15,8 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 Need: product description, or a list of feature names plus what each does. Six features make the best grid (one hero cell, two wide cells, three small cells). If more arrive, group them; if fewer, split the richest one into two aspects.
 
+Write every headline, caption, and miniature label from the input brief in your own words. References inform composition only; their words are never reused.
+
 ### 2. Assign cells
 
 Give each feature a cell size by demo value: the most visual feature gets the double cell, status or metric features get small cells, workflow features get wide cells. Each cell gets: a mockup (the working miniature), a 3 to 6 word label, and one line of caption. No cell may contain only text.

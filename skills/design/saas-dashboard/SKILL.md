@@ -13,7 +13,9 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 ### 1. Collect inputs
 
-Need: plain language brief (product name, audience, core features, or even a vague idea). Derive the screen from it: pick the single most representative view (overview, invoices, users, runs, campaigns) and name the 4 to 6 entities the data describes.
+Need: plain language brief (product name, audience, core features, or even a vague idea). Derive the screen from it: pick the single most representative view (overview, invoices, users, runs, campaigns) and name the 4 to 6 entities the data describes. Match the view to the product's core object: pipeline products show a kanban, queue products show an inbox or list, metric products show KPIs plus chart.
+
+Invent every name, company, figure, and label on the page. References inform layout only; their words and numbers are never reused.
 
 ### 2. Fix the data model first
 

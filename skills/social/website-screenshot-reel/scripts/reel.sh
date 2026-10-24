@@ -8,6 +8,7 @@ WIDTH=1440
 HEIGHT=900
 SCALE=2
 OUT="./reel"
+ARGS=""
 URLS=()
 
 while [[ $# -gt 0 ]]; do
@@ -16,7 +17,8 @@ while [[ $# -gt 0 ]]; do
     --height) HEIGHT="$2"; shift 2 ;;
     --scale) SCALE="$2"; shift 2 ;;
     --out) OUT="$2"; shift 2 ;;
-    --help) echo "Usage: $0 [--width 1440 --height 900 --scale 2 --out ./reel] <url>..."; exit 0 ;;
+    --args) ARGS="$2"; shift 2 ;;
+    --help) echo "Usage: $0 [--width 1440 --height 900 --scale 2 --out ./reel --args \"--no-sandbox\"] <url>..."; exit 0 ;;
     *) URLS+=("$1"); shift ;;
   esac
 done
@@ -29,8 +31,9 @@ fi
 export PATH="$HOME/.bun/bin:$HOME/.local/bin:$PATH"
 i=0
 for url in "${URLS[@]}"; do
+  # shellcheck disable=SC2086
   shot=$(printf "%s-%02d.png" "$OUT" "$i")
-  agent-browser open "$url"
+  agent-browser open $ARGS "$url"
   agent-browser set viewport "$WIDTH" "$HEIGHT" "$SCALE"
   agent-browser snapshot -i | grep -iE "dialog|banner|cookie|accept" || true
   agent-browser wait 1500
