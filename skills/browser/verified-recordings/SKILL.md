@@ -32,6 +32,10 @@ Do this before any final record:
 
 Only record the sequence that screenshots prove.
 
+### 2b. Beat-frame video QC (mandatory for staged clips)
+
+Screenshots prove the plan; frames prove the take. After recording, extract one still per beat (`ffmpeg -ss <beat time> -i take.mp4 -frames:v 1 beat-NN.png`), read every still yourself, and confirm: the expected state is on screen, the cursor is visible where the beat needs it, no mid-transition blur, no banner intrusion. If any still fails, the take fails: adjust and re-shoot. A video is only done when its beat frames read like a storyboard of the intent.
+
 ### 3. Tab record
 
 Pattern (no URL in `record start` so refs stay valid, no `networkidle` inside record):

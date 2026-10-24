@@ -5,7 +5,9 @@ description: Capture hero sections for a list of URLs and cut them into a short 
 
 # Website Screenshot Reel
 
-Capture the hero section of each given URL at 2x with consent dialogs and popups dismissed, then cut them into a short slideshow (each hero held ~1.2s with a quick crossfade) as MP4 plus GIF.
+Purpose: a crisp still slideshow of hero sections for comparing or showcasing sites (competitor scan, inspiration board, launch post). Still frames with quick crossfades; no camera motion, no zoom. Motion would fight the purpose, which is reading each hero.
+
+Capture the hero section of each given URL at 2x with consent dialogs and popups dismissed, then cut them into a short slideshow (each hero held ~1.2s with a 0.25s crossfade) as MP4 plus GIF.
 
 Original implementation. Functional scope is inspired by the Paralect skills catalog (https://www.paralect.com/skills/website-screenshot-reel). Not affiliated with Paralect. No Paralect text, prompts, or code are reused here.
 
@@ -27,14 +29,12 @@ Review every capture yourself: hero fully rendered, no banner visible, no blank 
 
 ### 3. Encode the slideshow
 
-Hold 1.2s per hero with 0.25s crossfades, 1280 wide output:
+Hold 1.2s per hero with 0.25s crossfades, 1280 wide output. No zoom, pan, or Ken Burns drift: frames stay perfectly still so text stays readable and heroes can be compared frame to frame.
 
 ```bash
-ffmpeg -y -framerate 1/1.2 -i reel-%02d.png -vf "scale=1280:-2,zoompan=z='min(zoom+0.0015,1.05)':fps=30:s=1280x720" -c:v libx264 -pix_fmt yuv420p reel.mp4
+ffmpeg -y -framerate 1/1.2 -i reel-%02d.png -vf "scale=1280:-2" -c:v libx264 -pix_fmt yuv420p reel.mp4
 ffmpeg -y -i reel.mp4 -vf "fps=12,scale=960:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=256[p];[s1][p]paletteuse" reel.gif
 ```
-
-Keep the subtle zoom (Ken Burns) slow enough to feel still; this is a showcase, not a music video.
 
 ### 4. Verify
 

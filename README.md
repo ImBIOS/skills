@@ -21,9 +21,9 @@ Repo layout follows [mattpocock/skills](https://github.com/mattpocock/skills): s
 
 ### Design
 
-- **[landing-page](./skills/design/landing-page/SKILL.md)**: Generate a polished hero landing page with a working demo of the product interface as a single self-contained HTML file.
-- **[saas-dashboard](./skills/design/saas-dashboard/SKILL.md)**: Generate a single self-contained HTML dashboard that reads like a real shipped product screen.
-- **[bento-features](./skills/design/bento-features/SKILL.md)**: Generate an HTML bento grid where every cell is a working miniature of one feature.
+- **[landing-page](./skills/design/landing-page/SKILL.md)**: Generate a polished hero landing page with a layered product visual and working demo as a single self-contained HTML file.
+- **[saas-dashboard](./skills/design/saas-dashboard/SKILL.md)**: Generate a standard SaaS console (workspace sidebar, breadcrumbs, KPIs, chart, searchable and sortable table with row actions) as a single HTML file.
+- **[bento-features](./skills/design/bento-features/SKILL.md)**: Generate an HTML bento grid of glow-finished cards where every cell is a working miniature of one feature.
 - **[saas-logo](./skills/design/saas-logo/SKILL.md)**: Design flat geometric logo concepts in SVG and export the pick as transparent mark plus app-icon PNGs.
 - **[low-res-mockup](./skills/design/low-res-mockup/SKILL.md)**: Generate a stripped-back skeleton wireframe of a screen before copy and visuals exist.
 

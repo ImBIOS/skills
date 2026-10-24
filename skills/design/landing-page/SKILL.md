@@ -23,11 +23,14 @@ Before writing code, fix: headline (outcome, not feature list), subhead (one sen
 
 Single file, semantic HTML, one `<style>` block, one small `<script>` block only if the demo needs interaction (tabs, toggles, fake live data). Rules:
 
+- Type: Inter first (local `@font-face` when the runner provides it; system stack fallback), display headline 600 to 800 weight with tight tracking (-0.02em), scale that dwarfs body copy. Headline quality decides the page.
+- Hero visual: layer the product UI with depth, not a flat screenshot box. Compose 2 or 3 overlapping panels (main window plus a floating notification, alert, or detail card offset over a corner), soft shadows, subtle backdrop glow. The demo interaction lives in the main panel.
 - Layout: max width 1120px, generous whitespace, one accent color plus neutrals.
 - Demo block: build it from divs that look like the product (sidebar, table, chart drawn with SVG or CSS bars). Add at least one interaction (switch tabs, filter rows, animate a number on load).
 - Responsive: single column under 720px, no horizontal scroll.
 - Accessibility: real buttons and links, alt text on meaningful images, contrast that passes AA for body text.
 - No lorem ipsum. Every string reads like the product team wrote it.
+- No emoji anywhere in the page. Icons are inline SVG only.
 
 ### 4. Verify
 

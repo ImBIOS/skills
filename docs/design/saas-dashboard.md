@@ -2,7 +2,7 @@
 
 ## What it does
 
-Turns a plain language brief into one self-contained HTML file that looks like a shipped product screen: sidebar, top bar, KPI cards, inline SVG chart, sortable or filterable table, and one detail interaction. All data is plausible and internally consistent.
+Turns a plain language brief into one self-contained HTML file that looks like a shipped SaaS console: workspace sidebar with switcher and user card, breadcrumbs, KPI cards, inline SVG chart, and a table with text search, status filter, sortable headers, and per-row actions. All data is plausible and internally consistent.
 
 ## When to reach for it
 

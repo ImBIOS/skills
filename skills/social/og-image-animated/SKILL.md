@@ -17,13 +17,9 @@ Run `og-image` first if no approved static card exists. The animation reuses its
 
 ### 2. Build the timeline
 
-Default 2.4s at 30fps, three beats, all easing eased-out with full rest on the end frame so the loop point is invisible:
+Default 2.4s at 30fps. Animate every element on the card with staggered entrances, landing-page rhythm: background settles first, then logo, headline, subhead, and UI pieces arrive one after another with short eased drops and rises, each overlapping the previous by a beat. End with a full-card hold of at least 0.8s so the loop point is invisible and the last frame matches the static card pixel for pixel in composition.
 
-- 0.0 to 0.6s: background settles, headline drops in with a short overshoot.
-- 0.5 to 1.4s: UI capture rises and fades into place.
-- 1.4 to 2.4s: full card holds still (this hold is what loops and what feeds validate as the poster).
-
-Accept a custom timing only if the caller gives one. Keep it under 3 seconds either way.
+Accept a custom timing only if the caller gives one. Keep it under 3 seconds either way. No emoji anywhere; icons are inline SVG only.
 
 ### 3. Render
 

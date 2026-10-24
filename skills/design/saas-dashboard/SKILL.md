@@ -21,14 +21,16 @@ Define 3 KPIs with values and deltas, 6 to 10 table rows with consistent fields,
 
 ### 3. Write the file
 
-Single file, one `<style>` block, one small `<script>` block for sort/filter plus one interaction (tab switch, row expand, modal open). Rules:
+Single file, one `<style>` block, one small `<script>` block for search, sort, filter, and row actions. Follow the standard SaaS console layout (shadcn-style): fixed left sidebar, top header bar, scrollable content. Rules:
 
-- Chrome: sidebar with active state, top bar, breadcrumbs or page title, consistent spacing scale.
-- Chart: inline SVG line or bars generated from the series, with axis labels. No chart library.
-- Table: sortable by at least one column or filterable by one control, with status pills and right aligned numbers.
-- Density: real product density (12px to 14px body, compact rows), not marketing whitespace.
+- Type: Inter first (local `@font-face` when provided; system stack fallback), 13px body, semibold section titles, tabular numbers.
+- Sidebar: workspace switcher button at the top (product mark plus name plus chevron), nav section with one consistent inline SVG icon set (uniform 16px stroke icons, never mixed styles), active item highlighted, and a user card pinned at the bottom (avatar initials, name, plan). Nav, user, and workspace placement is fixed by convention, not invented per page.
+- Header: breadcrumbs (Workspace / Section / View) on the left, search field and primary action on the right.
+- Chrome: KPI cards with delta and sparkline, one inline SVG chart with axis labels, then the data table.
+- Table: text search input that filters rows, at least one status or category filter, sortable column headers with direction indicators, checkbox column, and a per-row actions menu (View, Edit, Delete as real menu items). Numbers right aligned with status pills.
+- Density: real product density (compact rows), not marketing whitespace.
 - Responsive: sidebar collapses under 860px, table scrolls horizontally inside its card.
-- No external requests. System font stack or one inline font fallback.
+- No external requests. No emoji anywhere; icons are inline SVG only.
 
 ### 4. Verify
 

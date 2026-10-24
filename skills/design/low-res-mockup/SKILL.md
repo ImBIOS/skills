@@ -20,10 +20,12 @@ Need: the screen or component in a few words ("settings page", "checkout step 2"
 Single file, one `<style>` block, no JS unless the layout needs a tab switch to show two states. Rules:
 
 - Skeletons: rounded gray bars sized like the text they stand for (short bars for labels, long bars for paragraphs), crossed or shaded boxes for media, dashed outlines with tiny labels for interactive components ("CTA", "table", "chart").
-- Tokens: one gray scale, one accent used sparingly for the primary action outline only, monospace micro labels.
+- Fidelity: match the real layout part for part. Dashboard wireframes carry sidebar with active item, stat cards with sparkline squiggles, filter pills, a bar or line chart with gridlines, and a full table (checkbox, avatar circle, status pill, action squares). Landing wireframes carry nav, hero, button pair, and screenshot block. A wireframe that omits regions is unfinished.
+- Tokens: one gray scale, one accent used sparingly for the primary action outline only, monospace micro labels. Inter first for labels when provided, system fallback.
 - Structure: real semantic regions (header, nav, main, aside, footer) so the mock maps onto implementation.
 - Annotation: numbered callouts (1, 2, 3) for open questions, listed at the bottom of the file as HTML comments plus a visible legend.
 - Responsive: show desktop and phone as two stacked frames in the same file when both matter.
+- No emoji anywhere, not even as placeholder glyphs. Status and avatar slots are gray shapes.
 
 ### 3. Verify
 

@@ -23,11 +23,14 @@ Give each feature a cell size by demo value: the most visual feature gets the do
 
 Single file, CSS grid, one `<style>` block, one small `<script>` block. Rules:
 
+- Type: Inter first (local `@font-face` when provided; system stack fallback), semibold cell titles, small quiet captions.
+- Card finish: each cell carries a soft radial light in its top-right corner. Miniatures sit layered against that light: either in front of it (slightly translucent surfaces catching the glow) or set back so the light washes over them. Flat opaque cards with no light are rejected.
+- Grid rhythm: deliberately varied spans, never a uniform table. Hero cell spans 2x2, mixed wide (2x1), tall (1x2), and small cells so the mosaic feels composed, not gridded. Caption sits bottom-left of each cell, miniature fills the rest.
 - Every mockup has at least one live element: animated counter, toggleable switch, hoverable row, playable mini timeline, or auto cycling tabs.
 - Miniatures use the same design tokens (radius, accent, font scale) so cells feel like one product.
 - Motion is subtle and pauses on `prefers-reduced-motion`.
 - Responsive: 3 columns to 2 to 1 as width shrinks, hero cell spans first at each breakpoint.
-- No external assets, no real product copy beyond names the caller supplied.
+- No external assets, no real product copy beyond names the caller supplied. No emoji anywhere; icons are inline SVG only.
 
 ### 4. Verify
 

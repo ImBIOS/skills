@@ -27,6 +27,7 @@ One HTML file at exactly 1200x630, then screenshot it at 2x for the PNG. Rules:
 - Right or behind: the real UI capture, cropped hard, at an angle only if text stays legible.
 - Background: brand color or dark neutral, subtle texture at most. Contrast AAA for the headline.
 - Text occupies at most 40 percent of the area. No small print, no URLs on the card.
+- Type: Inter first (local `@font-face` when provided; system stack fallback). No emoji anywhere on the card.
 
 ### 4. Wire the meta tags
 

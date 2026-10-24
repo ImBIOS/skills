@@ -12,7 +12,7 @@
 - [verified-recordings](skills/browser/verified-recordings/SKILL.md): Record correct demo videos with agent-browser tab capture or OCU plus ffmpeg desktop capture, verified by screenshots. Use for browser tab demos, TigerVNC :1 desktop demos, and X video posts.
 - [website-scroll](skills/browser/website-scroll/SKILL.md): Record a top-to-bottom scroll reel of any public page with poster frame. Covers the same use case as the Paralect website scroll skill with an original agent-browser implementation.
 - [landing-page](skills/design/landing-page/SKILL.md): Generate a polished hero landing page with a working product demo block as one self-contained HTML file.
-- [saas-dashboard](skills/design/saas-dashboard/SKILL.md): Generate a single self-contained HTML dashboard with KPIs, SVG chart, and sortable table.
+- [saas-dashboard](skills/design/saas-dashboard/SKILL.md): Generate a standard SaaS console as one self-contained HTML file: workspace sidebar with user card, breadcrumbs, KPI cards, SVG chart, and a searchable, filterable, sortable table with per-row actions.
 - [bento-features](skills/design/bento-features/SKILL.md): Generate an HTML bento grid where each cell is a working miniature of one feature.
 - [saas-logo](skills/design/saas-logo/SKILL.md): Design flat geometric logo concepts in SVG and export mark plus app-icon PNGs.
 - [low-res-mockup](skills/design/low-res-mockup/SKILL.md): Generate a skeleton wireframe of a screen with placeholder blocks instead of copy.

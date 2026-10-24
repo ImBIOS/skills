@@ -30,7 +30,7 @@ Screenshot verify every beat with `verified-recordings` before recording: each P
 
 ### 3. Stage and record
 
-Framing is a presentation layer over the real UI: rounded window chrome, soft wallpaper backdrop, drawn cursor with easing between beats. Record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster:
+Framing is a presentation layer over the real UI: the app sits in a rounded window centered over a soft gradient backdrop (two brand-tinted radial glows on dark, never a flat void), with a large drawn cursor (at least 2x native size, white arrow with dark outline plus a soft click ring on press) that eases between beats and is visible in every frame. Record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster:
 
 ```bash
 agent-browser record start ./demo.webm --cursor --fps 30

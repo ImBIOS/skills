@@ -9,7 +9,7 @@ Scroll a page section by section the way a reader does, as MP4 plus poster. Shar
 
 ## Pattern (proven live)
 
-Eased tween per section with a rest on each, paced to page height. Beats read; glides connect:
+Eased tween per section with a rest on each, paced to page height. Beats read; glides connect. Flicks stay short (about half a viewport each) with a rest on every stop: many small verified steps, never one long jump. A jump over a full viewport in a single beat is a defect, re-shoot with more stops.
 
 ```bash
 agent-browser open <url>
@@ -29,7 +29,7 @@ ffmpeg -y -ss 0.5 -i scroll.mp4 -frames:v 1 poster.png
 ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 scroll.mp4
 ```
 
-Pick tween targets from the h2 map so each rest lands on a section. Scale durations plus rests to budget. Single full-page tween (no rests) works but reads relentlessly; section beats match the Paralect clipwing/linear rhythm. No cursor flag for a clean reel. No `networkidle` inside record.
+Pick tween targets from the h2 map so each rest lands on a section, capped so no single tween travels more than half a viewport. Scale durations plus rests to budget. Single full-page tween (no rests) works but reads relentlessly; section beats match the Paralect clipwing/linear rhythm. No cursor flag for a clean reel. No `networkidle` inside record.
 
 ## Verify
 
