@@ -19,7 +19,7 @@ Invent every name, company, figure, and label on the page. References inform lay
 
 ### 2. Fix the data model first
 
-Define 3 KPIs with values and deltas, 6 to 10 table rows with consistent fields, and one time series of 12 to 24 points for the chart. Values must be internally consistent (totals match rows, deltas match direction). Write these down before coding so the mock does not contradict itself.
+Define 3 KPIs with values and deltas, 6 to 10 table rows with consistent fields, and one time series of 12 to 24 points for the chart. Values must be internally consistent (totals match rows, deltas match direction). Write these down before coding so the mock does not contradict itself. Match the view to the product's core object, never defaulting to one template: pipeline products show kanban columns with cards, queue or inbox products show a split list plus detail pane, metric products show KPIs plus chart plus table, time products show a timeline. Vary the module lineup per product (KPI count, chart type, table versus cards); two outputs for different products must not share the same skeleton.
 
 ### 3. Write the file
 

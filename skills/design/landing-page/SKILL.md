@@ -29,6 +29,9 @@ Single file, semantic HTML, one `<style>` block, one small `<script>` block only
 - Hero visual: layer the product UI with depth, not a flat screenshot box. Compose 2 or 3 overlapping panels (main window plus a floating notification, alert, or detail card offset over a corner), soft shadows, subtle backdrop glow. The demo interaction lives in the main panel.
 - Layout: max width 1120px, generous whitespace, one accent color plus neutrals.
 - Demo block: build it from divs that look like the product (sidebar, table, chart drawn with SVG or CSS bars). Add at least one interaction (switch tabs, filter rows, animate a number on load).
+- CTA buttons pair an icon with the label (inline SVG: terminal, arrow, play). The secondary button always carries one; the primary may too. Text-only button pairs are rejected.
+- Window chrome is never empty: traffic lights, product or repo icon plus breadcrumb path, a right-aligned search field with kbd hint, and an avatar stack (initials on varied hues with +N overflow). Every region of the demo window shows product content.
+- Depth through layering: main panel plus at least two floating cards overlapping its edges (alert, assign, cause, forecast) plus one card clipped by the viewport bottom edge. Soft shadows and a backdrop glow sell the depth; a single flat panel does not ship.
 - Responsive: single column under 720px, no horizontal scroll.
 - Accessibility: real buttons and links, alt text on meaningful images, contrast that passes AA for body text.
 - No lorem ipsum. Every string reads like the product team wrote it.

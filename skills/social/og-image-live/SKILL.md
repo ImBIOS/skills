@@ -13,7 +13,7 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 ### 1. Require the static card first
 
-Run `og-image` first if no approved static card exists. The live version keeps its headline, palette, and layout, and swaps the static UI crop for a live region.
+Run `og-image` first if no approved static card exists. The live version keeps its headline, palette, and layout, and swaps the static UI crop for a live region. Same shared-source rule as `og-image-animated`: layer the loop onto the exact `card.html` from `og-image`, never a rebuilt copy, so the resting state matches the static composition.
 
 ### 2. Script one product moment
 

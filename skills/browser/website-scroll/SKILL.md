@@ -9,7 +9,7 @@ Scroll a page section by section the way a reader does, as MP4 plus poster. Shar
 
 ## Pattern (proven live)
 
-Eased tween per section with a rest on each, paced to page height. Beats read; glides connect. Flicks stay short (about half a viewport each) with a rest on every stop: many small verified steps, never one long jump. A jump over a full viewport in a single beat is a defect, re-shoot with more stops.
+Eased tween per section with a rest on each, paced to page height. Beats read; glides connect. Flicks stay short (about half a viewport each) with a rest on every stop: many small verified steps, never one long jump. A jump over a full viewport in a single beat is a defect, re-shoot with more stops. Rests must read on video: hold at least 1.5s per stop, and prove it by extracting two frames 1s apart at a stop and confirming they are near-identical before accepting the take.
 
 ```bash
 agent-browser open <url>

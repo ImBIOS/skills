@@ -41,7 +41,7 @@ ffmpeg -y -ss 1.0 -i demo.mp4 -frames:v 1 demo-poster.png
 ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 demo.mp4
 ```
 
-Keep 10 to 40 seconds. Cursor on, motion eased, rests on each end state long enough to read.
+Keep 10 to 40 seconds. Cursor on, motion eased, rests on each end state long enough to read. The visible cursor must sit exactly on the control it activates: either record with the real cursor flag, or position a drawn cursor from measured element boxes immediately before acting. Beat stills must show cursor-on-target at every click; a take where clicks land away from the cursor fails. The demo app itself must meet the design-skill bar: real data, icons in buttons, populated chrome, no empty regions.
 
 ### 4. Verify
 

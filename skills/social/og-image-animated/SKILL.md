@@ -13,7 +13,7 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 ### 1. Require the static card first
 
-Run `og-image` first if no approved static card exists. The animation reuses its composition, headline, and assets, so the animated version is recognizably the same card.
+Run `og-image` first if no approved static card exists. The animation reuses its composition, headline, and assets, so the animated version is recognizably the same card. Stronger: all three card skills share one source file. `og-image` delivers `card.html` plus the PNG; this skill layers its timeline onto that exact file (additive animation code only), and `og-image-live` does the same for its loop. Never rebuild the card from scratch: the static PNG, the animated end frame, and the live resting state must be the same composition.
 
 ### 2. Build the timeline
 
@@ -38,7 +38,7 @@ Pure CSS animation keeps every frame deterministic, so the take records identica
 
 ### 4. Verify
 
-Check: total under 3s, first frame readable, last frame matches the static card, loop restart invisible, GIF under 5MB, MP4 plays as H264 yuv420p. Re-record on any animation jank, never ship a partial take.
+Check: total under 3s, first frame readable, last frame matches the static card, loop restart invisible, GIF under 5MB, MP4 plays as H264 yuv420p. The take is finished only when its last frame shows the settled composition, not a mid-motion frame: compare the extracted last frame against the static PNG side by side. Size the record window as animation duration plus hold plus 0.5s margin; a take that ends mid-motion gets a longer window and a re-record, never a trim. Re-record on any animation jank, never ship a partial take.
 
 ## Boundaries
 
