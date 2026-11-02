@@ -30,7 +30,7 @@ Screenshot verify every beat with `verified-recordings` before recording: each P
 
 ### 3. Stage and record
 
-Framing is a presentation layer over the real UI: the app sits in a rounded window centered over a soft gradient backdrop (two brand-tinted radial glows on dark, never a flat void). Record with the real cursor flag on so the pointer behaves like a user's: hover states fire, buttons show their pressed state, text fields show focus rings, and the cursor shape changes over interactive elements. Drawn or injected cursors are rejected because they cannot trigger these states. Position from measured element boxes immediately before acting, then record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster:
+Framing is a presentation layer over the real UI: the app sits in a rounded window centered over a soft gradient backdrop (two brand-tinted radial glows on dark, never a flat void). Record with the real cursor flag on so the pointer behaves like a user's: hover states fire, buttons show their pressed state, text fields show focus rings, and the cursor shape changes over interactive elements. Drawn or injected cursors are rejected because they cannot trigger these states. Position from measured element boxes immediately before acting, then record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster. When the modal or window is hidden at anchor time, its rects read as zeros: cache anchors only from non-zero rects and fall back to a park position, firing clicks only during on-target holds.
 
 ```bash
 agent-browser record start ./demo.webm --cursor --fps 30

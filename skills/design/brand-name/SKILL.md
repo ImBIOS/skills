@@ -41,11 +41,13 @@ Use `scripts/check-handles.py`. Method per platform: GitHub and X return 404 for
 
 ### 5. Deliver the shortlist
 
-One HTML or markdown report: the top 5 names ranked, each with its method, the domain matrix (extension by status), the handle matrix (platform by status), and the recommended first pick with reasoning (shortest clean .com or the required TLD, plus most handles free). Candidates that fail everywhere are listed once at the bottom as rejected, not hidden. UNKNOWN-heavy names are flagged for manual re-check, never recommended.
+Deliver exactly 5 examples. Structure every example as product name plus its best available domain plus verified-free handles, and require at least 1 AVAILABLE domain per example: names need not be identical across slots (industry standard is prefix/suffix variants like get, use, try, join, hey, hq, app, labs when the exact .com is taken, e.g. useemberline.com for Emberline). Handle variants follow the same rule (get/try/use prefixes, app/hq suffixes).
+
+Recommend every example only with handles VERIFIED free on GitHub and X (LIKELY FREE via script, re-run at delivery time). Platforms the script cannot verify (Instagram, TikTok, YouTube, Dribbble rate walls) are analyzed only where checkable: skip unknowns silently instead of listing them as caveats. Rejected also-rans go in one line at the bottom. State the first pick with reasoning (shortest clean domain plus most verified handles).
 
 ## Verify
 
-Re-run both scripts on the shortlist before delivering. Confirm: every TAKEN claim has an RDAP 200 or profile 200 behind it, every AVAILABLE domain has a registry 404, no UNKNOWN is presented as a verdict, report shows at most the top 5 plus rejects. Read the report yourself before handing it over.
+Re-run both scripts on the shortlist before delivering. Confirm: every recommended example has at least 1 AVAILABLE domain and verified-free GitHub + X handles, every TAKEN claim has an RDAP 200 or profile 200 behind it, every AVAILABLE domain has a registry 404, report shows exactly 5 examples. Read the report yourself before handing it over.
 
 ## Boundaries
 
