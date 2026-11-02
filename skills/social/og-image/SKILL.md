@@ -23,9 +23,10 @@ Screenshot the running app or production page at 2x with banners and overlays di
 
 One HTML file at exactly 1200x630, then screenshot it at 2x for the PNG. Rules:
 
-- Left: headline (5 to 8 words), optional one line subhead, logo or wordmark.
+- Left: headline (5 to 8 words), optional one line subhead, logo or wordmark from the `saas-logo` lockup set when one exists (never redrawn for the card; if none exists, call that skill first).
 - Right or behind: the real UI capture, cropped hard, at an angle only if text stays legible.
 - Imagery with content, never empty shapes: avatars are initials on varied hue fills, project and item rows get small SVG glyph tiles, heatmaps and status elements carry real data density. Blank gray circles and hollow placeholder boxes are rejected.
+- Search and input affordances use the correct icon per element: magnifier for search, never a checkmark; checkmarks appear only on completed items.
 - Background: brand color or dark neutral, subtle texture at most. Contrast AAA for the headline.
 - Text occupies at most 40 percent of the area. No small print, no URLs on the card.
 - Type: Inter first (local `@font-face` when provided; system stack fallback). No emoji anywhere on the card.

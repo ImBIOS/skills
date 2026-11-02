@@ -17,7 +17,7 @@ Need: the one idea (page, modal, or flow plus what the cursor does in it) and th
 
 ### 2. Write the take file
 
-A take is a short ordered list of beats, 3 to 6 total: hover, click, type, wait, assert. Example shape:
+A take is a short ordered list of beats, 3 to 6 total: hover, click, type, wait, assert. Drive the real cursor through the real browser (see step 3); drawn or synthetic cursors are not used. Example shape:
 
 ```
 1. Open <url>, settle, assert hero visible.
@@ -30,7 +30,7 @@ Screenshot verify every beat with `verified-recordings` before recording: each P
 
 ### 3. Stage and record
 
-Framing is a presentation layer over the real UI: the app sits in a rounded window centered over a soft gradient backdrop (two brand-tinted radial glows on dark, never a flat void), with a large drawn cursor (at least 2x native size, white arrow with dark outline plus a soft click ring on press) that eases between beats and is visible in every frame. Record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster:
+Framing is a presentation layer over the real UI: the app sits in a rounded window centered over a soft gradient backdrop (two brand-tinted radial glows on dark, never a flat void). Record with the real cursor flag on so the pointer behaves like a user's: hover states fire, buttons show their pressed state, text fields show focus rings, and the cursor shape changes over interactive elements. Drawn or injected cursors are rejected because they cannot trigger these states. Position from measured element boxes immediately before acting, then record the tab per `verified-recordings` (no URL in record start, no networkidle inside record), then convert and poster:
 
 ```bash
 agent-browser record start ./demo.webm --cursor --fps 30
@@ -41,7 +41,7 @@ ffmpeg -y -ss 1.0 -i demo.mp4 -frames:v 1 demo-poster.png
 ffprobe -v error -show_entries format=duration,size -of default=noprint_wrappers=1 demo.mp4
 ```
 
-Keep 10 to 40 seconds. Cursor on, motion eased, rests on each end state long enough to read. The visible cursor must sit exactly on the control it activates: either record with the real cursor flag, or position a drawn cursor from measured element boxes immediately before acting. Beat stills must show cursor-on-target at every click; a take where clicks land away from the cursor fails. The demo app itself must meet the design-skill bar: real data, icons in buttons, populated chrome, no empty regions.
+Keep 10 to 40 seconds. The cursor must be the real one with its flag on: hover states fire, pressed states show, focus rings appear, and the pointer changes shape over interactive elements. Beat stills must show the real cursor on target at every click; a take where clicks land away from the cursor fails. The demo app itself must meet the design-skill bar: real data, icons in buttons, populated chrome, no empty regions. Build the demo app with the same skill that builds the product screen (`saas-dashboard` for console UIs, `landing-page` for marketing pages) instead of hand-rolling a one-off page, so its quality matches.
 
 ### 4. Verify
 

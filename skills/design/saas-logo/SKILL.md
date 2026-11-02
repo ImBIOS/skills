@@ -31,16 +31,21 @@ For each concept write one line: the symbol as geometry, its count and rhythm, t
 
 Hand write each concept as clean SVG on a grid (viewBox 0 0 256 256, strokes expanded or uniform). Render all concepts side by side on one comparison sheet (one HTML page embedding the SVGs at 64px, 32px, and 16px) and judge: silhouette distinctness, 16px legibility, single color version survival. Iterate the weakest concept once, then pick.
 
-### 4. Export the pick
+### 4. Export the pick and the lockup set
 
-Deliverables, mark centered with optical (not mathematical) balance:
+One geometry, arranged per use. Export each (SVG source plus PNG at 1024px on the long side unless noted):
 
-- `mark.png`: transparent background, no padding, 1024px on the long side.
-- `icon.png`: rounded tile (22 percent radius) in brand color with the mark knocked out or overlaid, 1024x1024.
-- Keep the source `mark.svg` and `icon.svg` next to the PNGs.
+- `mark.svg` / `mark.png`: bare mark, transparent, no padding.
+- `icon.svg` / `icon.png`: rounded app-icon tile (22 percent radius), 1024x1024.
+- `logo-light.svg` / `logo-light.png`: horizontal lockup (mark plus wordmark in Inter 600) for light backgrounds.
+- `logo-dark.svg` / `logo-dark.png`: same lockup for dark backgrounds.
+- `logo-mono.svg` / `logo-mono.png`: single-color version (black on transparent plus white on transparent) for print, emboss, favicon.
+- `social-avatar.png`: mark centered in the tile at avatar-safe padding, 512x512.
 
-Rasterize with whatever is installed (`rsvg-convert`, Inkscape, ImageMagick, or a short Python PIL script that parses the SVG paths). Verify: open both PNGs over light and dark backgrounds, confirm clean edges and no clipping, confirm 16px favicon legibility from the sheet.
+### 5. Skill links and naming
+
+This skill covers any logo, not only SaaS: product marks, personal marks, open source marks, event marks. When a page built by `landing-page`, `saas-dashboard`, or `og-image` has no brand yet, call this skill first and use its outputs: the page wordmark and the card brand row come from the lockup set, never redrawn. The old name `saas-logo` stays as an alias for compatibility; the skill answers to `logo` and `brand-mark` too.
 
 ## Boundaries
 
-Logo marks and app icons only. No full brand systems, no wordmarks with custom lettering beyond the initial, no copying of existing marks (being "like" a brand means sharing its family, never its shape). For share cards that use the logo, pair with `og-image`. For generated imagery in articles, use `article-image`.
+Logo marks, lockups, and brand variants for any product, not only SaaS. No full brand systems beyond the lockup set, no custom lettering beyond the wordmark in the lockup, no copying of existing marks (being "like" a brand means sharing its construction family, never its shape). For share cards that use the logo, pair with `og-image`. For generated imagery in articles, use `article-image`.

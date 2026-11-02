@@ -13,7 +13,11 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 ### 1. Collect inputs
 
+### 1. Collect inputs
+
 Need: product description (one paragraph, or name plus feature list). Optional: color scheme (dark or light). If the scheme is missing, pick based on product mood (dev tools lean dark, SMB SaaS leans light) and state the choice.
+
+Brand first: by default the skill runs on the product's existing brand (logo and wordmark from the lockup set, display face and accent from the brand). When no brand exists yet, call `saas-logo` first and build from its outputs: the page wordmark, favicon, and the demo window brand row all come from the lockup set. Inventing a one-off wordmark inside the page is rejected when the lockup exists.
 
 Invent every word on the page: headline, subhead, CTAs, feature names, metrics, testimonial, prices. Reference screenshots or galleries may inform layout only; their words are never reused, not even headlines or button labels.
 
@@ -25,10 +29,10 @@ Before writing code, fix: headline (outcome, not feature list), subhead (one sen
 
 Single file, semantic HTML, one `<style>` block, one small `<script>` block only if the demo needs interaction (tabs, toggles, fake live data). Rules:
 
-- Type: Inter first (local `@font-face` when the runner provides it; system stack fallback), display headline 600 to 800 weight with tight tracking (-0.02em), scale that dwarfs body copy. Headline quality decides the page.
+- Type: pair a characterful display face for the headline with Inter for UI and body. Never Inter for everything: the display face carries the brand. When font files are provided locally, use them via `@font-face`; otherwise use the system stack. Options in preference order: Inter Tight (Inter's own display cut, safest), Satoshi or General Sans (geometric character without quirk), Space Grotesk (techy edge, display only), Geist (Vercel house feel). Headline 700 to 800 weight with tight tracking (-0.02em to -0.04em depending on face), scale that dwarfs body copy. Body and UI stay Inter for legibility; the display face appears in the hero headline, metric numerals, and at most one more accent. No system sans (Arial, Helvetica) as the visible face anywhere.
 - Hero visual: layer the product UI with depth, not a flat screenshot box. Compose 2 or 3 overlapping panels (main window plus a floating notification, alert, or detail card offset over a corner), soft shadows, subtle backdrop glow. The demo interaction lives in the main panel.
 - Layout: max width 1120px, generous whitespace, one accent color plus neutrals.
-- Demo block: build it from divs that look like the product (sidebar, table, chart drawn with SVG or CSS bars). Add at least one interaction (switch tabs, filter rows, animate a number on load).
+- Demo block: build it from divs that look like the product (sidebar, table, chart drawn with SVG or CSS bars). Add at least one interaction (switch tabs, filter rows, animate a number on load). The demo window is unique per product, never a template: its regions, tabs, rows, and columns come from the brief's entities, not from a shared window scaffold. A demo that could belong to any product fails the brief before any pixels are judged.
 - CTA buttons pair an icon with the label (inline SVG: terminal, arrow, play). The secondary button always carries one; the primary may too. Text-only button pairs are rejected.
 - Window chrome is never empty: traffic lights, product or repo icon plus breadcrumb path, a right-aligned search field with kbd hint, and an avatar stack (initials on varied hues with +N overflow). Every region of the demo window shows product content.
 - Depth through layering: main panel plus at least two floating cards overlapping its edges (alert, assign, cause, forecast) plus one card clipped by the viewport bottom edge. Soft shadows and a backdrop glow sell the depth; a single flat panel does not ship.

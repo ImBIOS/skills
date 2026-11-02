@@ -15,6 +15,8 @@ Original implementation. Functional scope is inspired by the Paralect skills cat
 
 Need: plain language brief (product name, audience, core features, or even a vague idea). Derive the screen from it: pick the single most representative view (overview, invoices, users, runs, campaigns) and name the 4 to 6 entities the data describes. Match the view to the product's core object: pipeline products show a kanban, queue products show an inbox or list, metric products show KPIs plus chart.
 
+Brand first: same rule as `landing-page`. When no brand exists yet, call `saas-logo` first; sidebar wordmark and avatars use its outputs.
+
 Invent every name, company, figure, and label on the page. References inform layout only; their words and numbers are never reused.
 
 ### 2. Fix the data model first
@@ -25,7 +27,8 @@ Define 3 KPIs with values and deltas, 6 to 10 table rows with consistent fields,
 
 Single file, one `<style>` block, one small `<script>` block for search, sort, filter, and row actions. Follow the standard SaaS console layout (shadcn-style): fixed left sidebar, top header bar, scrollable content. Rules:
 
-- Type: Inter first (local `@font-face` when provided; system stack fallback), 13px body, semibold section titles, tabular numbers.
+- Type: Inter for UI and body (local `@font-face` when provided; system stack fallback), 13px body, tabular numbers. Headline, KPI numerals, and sidebar workspace name may use the display face when one is in use on the page (same pairing rule as `landing-page`); body, table, and labels stay Inter. Tracking: display -0.02em to -0.03em, body 0, uppercase micro-labels +0.08em to +0.12em with 11 to 12px size.
+- Spacing scale: one 4px base unit, section rhythm 16/24/32, card padding 20 to 24, table rows 12 to 14px vertical. Hierarchy by size and weight only: one display size, one title size, body, micro. Never two adjacent sizes within 2px of each other.
 - Sidebar: workspace switcher button at the top (product mark plus name plus chevron), nav section with one consistent inline SVG icon set (uniform 16px stroke icons, never mixed styles), active item highlighted, and a user card pinned at the bottom (avatar initials, name, plan). Nav, user, and workspace placement is fixed by convention, not invented per page.
 - Header: breadcrumbs (Workspace / Section / View) on the left, search field and primary action on the right.
 - Chrome: KPI cards with delta and sparkline, one inline SVG chart with axis labels, then the data table.
