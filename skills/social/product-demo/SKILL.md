@@ -45,7 +45,7 @@ Keep 10 to 40 seconds. The cursor must be the real one with its flag on: hover s
 
 ### 4. Verify
 
-Read first, middle, last frames: entry state, mid flow action, resting end state matching the poster. If any frame is static, off site, or mid transition, tighten waits and actions and re-shoot. Never ship an unverified take.
+Read first, middle, last frames: entry state, mid flow action, resting end state matching the poster. Iteration stills are mandatory evidence, not optional: when video cannot be analyzed natively, capture one still per beat, read every still, iterate the take until every still passes, and only then deliver the video the stills approve. Collect the stills plus a one-line verdict per still into a `qc/` folder next to the video (`qc/beat-NN.png` plus `qc/verdicts.md`). If any frame is static, off site, or mid transition, tighten waits and actions and re-shoot. Never ship an unverified take.
 
 ## Boundaries
 

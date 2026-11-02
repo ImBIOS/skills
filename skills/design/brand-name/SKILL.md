@@ -17,7 +17,7 @@ Need: product description (what it is, verb users perform, audience), naming con
 
 ### 2. Generate candidates
 
-Produce 12 to 20 candidates across at least 4 construction methods (never one method for the whole list):
+Produce exactly 25 names: 5 product briefs (different categories, e.g. fintech, AI devtool, wellness, travel, developer SaaS), 5 names per brief, generated fresh per brief (never one generation reused across briefs). Methods across at least 4 construction types per brief:
 
 1. Compound: two product words fused or clipped (Northwind, Fieldkit).
 2. Evocative: mood or outcome word adjacent to the category (Beacon, Lantern).
@@ -41,13 +41,13 @@ Use `scripts/check-handles.py`. Method per platform: GitHub and X return 404 for
 
 ### 5. Deliver the shortlist
 
-Deliver exactly 5 examples. Structure every example as product name plus its best available domain plus verified-free handles, and require at least 1 AVAILABLE domain per example: names need not be identical across slots (industry standard is prefix/suffix variants like get, use, try, join, hey, hq, app, labs when the exact .com is taken, e.g. useemberline.com for Emberline). Handle variants follow the same rule (get/try/use prefixes, app/hq suffixes).
+Deliver 5 product briefs, each with its own 5-name shortlist (25 names total). Structure every name as product name plus its best available domain plus verified-free handles, and require at least 1 AVAILABLE domain per name: names need not be identical across slots (industry standard is prefix/suffix variants like get, use, try, join, hey, hq, app, labs when the exact .com is taken, e.g. useemberline.com for Emberline). Handle variants follow the same rule (get/try/use prefixes, app/hq suffixes).
 
 Recommend every example only with handles VERIFIED free on GitHub and X (LIKELY FREE via script, re-run at delivery time). Platforms the script cannot verify (Instagram, TikTok, YouTube, Dribbble rate walls) are analyzed only where checkable: skip unknowns silently instead of listing them as caveats. Rejected also-rans go in one line at the bottom. State the first pick with reasoning (shortest clean domain plus most verified handles).
 
 ## Verify
 
-Re-run both scripts on the shortlist before delivering. Confirm: every recommended example has at least 1 AVAILABLE domain and verified-free GitHub + X handles, every TAKEN claim has an RDAP 200 or profile 200 behind it, every AVAILABLE domain has a registry 404, report shows exactly 5 examples. Read the report yourself before handing it over.
+Re-run both scripts on the shortlist before delivering. Confirm: every recommended name has at least 1 AVAILABLE domain and verified-free GitHub + X handles, every TAKEN claim has an RDAP 200 or profile 200 behind it, every AVAILABLE domain has a registry 404, report shows 5 briefs with 5 names each. Read the report yourself before handing it over.
 
 ## Boundaries
 

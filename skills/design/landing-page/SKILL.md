@@ -5,7 +5,7 @@ description: Build a polished hero landing page plus an interactive mock of the 
 
 # Landing Page
 
-Produce a complete landing page as one self-contained HTML file: hero with headline and CTA, a working visual demo of the product interface (static mock with hover states or small JS interactions, no backend), plus supporting sections (logos, features, pricing teaser, footer). No external assets except system fonts or inline SVG. Everything inline so the file opens directly in a browser.
+Produce a complete full-length landing page as one self-contained HTML file: sticky nav, hero with headline and CTA, logo strip, live product demo block (static mock with hover states or small JS interactions, no backend), feature grid, use-case or persona tabs, metric band, testimonial set, pricing, FAQ, final CTA, footer. This is a full page, not a hero screenshot: the file must read top to bottom as a shippable marketing page. Reference the MotionSites gallery (https://motionsites.ai/, categories: apps, sections, hero, landing page, saas, 3d, creative, portfolio, agency, AI, travel, fintech, interactive, tech, wellness, ecomm) for section rhythm and visual ambition: varied section treatments per product, not one repeated band style.
 
 Original implementation. Functional scope is inspired by the Paralect skills catalog (https://www.paralect.com/skills/landing-page). Not affiliated with Paralect. No Paralect text, prompts, or code are reused here.
 
@@ -23,7 +23,7 @@ Invent every word on the page: headline, subhead, CTAs, feature names, metrics, 
 
 ### 2. Draft the page plan
 
-Before writing code, fix: headline (outcome, not feature list), subhead (one sentence), primary CTA plus secondary CTA, 3 proof elements (metric, logo row, testimonial), demo block contents (the 3 or 4 UI elements the fake product shows), and section order. Keep total under 6 sections so the file stays reviewable.
+Before writing code, fix: sticky nav links, headline (outcome, not feature list), subhead (one sentence), primary CTA plus secondary CTA, logo row, demo block contents (the 3 or 4 UI elements the fake product shows), feature grid (4 to 6 items), persona or use-case tabs (2 to 4), metric band (2 to 4 numbers), testimonials (2 to 3), pricing tiers (2 to 3), FAQ (4 to 6), final CTA, footer. Keep the full page in one file and reviewable.
 
 ### 3. Write the file
 
@@ -43,7 +43,7 @@ Single file, semantic HTML, one `<style>` block, one small `<script>` block only
 
 ### 4. Verify
 
-Open the file in a browser (or screenshot it) and check: hero fits first viewport, CTA visible without scroll, demo interaction works, no overflow at 390px width, no console errors. Fix and re-screenshot until all pass. Save next to the file as `landing-preview.png` when the caller wants evidence.
+Open the file in a browser (or screenshot it) and check the full page top to bottom: sticky nav works, hero fits first viewport, CTA visible without scroll, demo interaction works, every planned section present through FAQ, final CTA, and footer, no overflow at 390px width, no console errors. Screenshot the full page (not just the hero) as evidence. Fix and re-screenshot until all pass. Save next to the file as `landing-preview.png` when the caller wants evidence.
 
 ## Boundaries
 
