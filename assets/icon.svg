@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Recreated from the imbios.dev favicon: white X with red side-arcs on black. -->
+  <rect width="512" height="512" rx="112" fill="#000"/>
+  <!-- red side-arcs: two 110° arcs centered on the horizontal axis -->
+  <path d="M 353.5 116.7 A 170 170 0 0 1 353.5 395.3" fill="none" stroke="#FF0000" stroke-width="52"/>
+  <path d="M 158.5 395.3 A 170 170 0 0 1 158.5 116.7" fill="none" stroke="#FF0000" stroke-width="52"/>
+  <!-- white X -->
+  <path d="M166 166 L346 346" stroke="#fff" stroke-width="84" stroke-linecap="round"/>
+  <path d="M346 166 L166 346" stroke="#fff" stroke-width="84" stroke-linecap="round"/>
+</svg>
