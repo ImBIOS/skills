@@ -1,0 +1,5 @@
+interface:
+  display_name: "Website Screenshot Reel"
+  short_description: "Cut hero screenshots of given URLs into a crisp slideshow as MP4 and GIF"
+policy:
+  allow_implicit_invocation: true

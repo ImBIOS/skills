@@ -1,0 +1,5 @@
+interface:
+  display_name: "Product Demo"
+  short_description: "Record a polished guided demo of the running app as MP4 with poster"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,5 @@
+interface:
+  display_name: "OG Image"
+  short_description: "Compose the static share card from real UI and wire its meta tags"
+policy:
+  allow_implicit_invocation: true

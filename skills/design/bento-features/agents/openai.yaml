@@ -1,0 +1,5 @@
+interface:
+  display_name: "Bento Features"
+  short_description: "Generate a bento grid where each cell is a working miniature of one feature"
+policy:
+  allow_implicit_invocation: true

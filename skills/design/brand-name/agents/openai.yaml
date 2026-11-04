@@ -1,0 +1,5 @@
+interface:
+  display_name: "Brand Name"
+  short_description: "Ideate product names and screen them with live domain and handle checks"
+policy:
+  allow_implicit_invocation: true
