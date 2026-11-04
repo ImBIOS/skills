@@ -18,4 +18,4 @@ Reach for it for feature overviews, bento grids, or features sections where tile
 
 ## It's working if
 
-Every cell shows a mockup that responds to at least one interaction, cells share one design language, the grid holds at desktop and phone widths, and motion respects reduced motion settings.
+Every cell shows a mockup that responds to at least one interaction, tall cells carry at least 3 content blocks with no dead row-unit, full-width cells fill both columns, cells share one design language, the grid holds at desktop and phone widths, and motion respects reduced motion settings.

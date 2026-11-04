@@ -30,7 +30,7 @@ Single file, CSS grid, one `<style>` block, one small `<script>` block. Rules:
 - Grid rhythm: deliberately varied spans, never a uniform table, and never a mechanical big-small-big-small alternation. Compose asymmetric mosaics: two smalls stacked, a tall 1x2 against wides, an offset hero. Hero cell spans 2x2, mixed wide (2x1), tall (1x2), and small cells so the mosaic feels composed, not gridded. Caption sits bottom-left of each cell, miniature fills the rest.
 - Every mockup has at least one live element: animated counter, toggleable switch, hoverable row, playable mini timeline, or auto cycling tabs.
 - No two cells share a miniature pattern: vary the mockup type per cell (pipeline, inbox, calendar, scorecard, chart, toggle row, checklist, ledger). A grid where every cell is a variant of the same table or list fails review.
-- No empty scaffold: every cell region carries content at rest. A cell whose miniature renders blank (empty bars, zero rows, unfilled chart) is unfinished regardless of its interactions.
+- No empty scaffold: every cell region carries content at rest. A cell whose miniature renders blank (empty bars, zero rows, unfilled chart) is unfinished regardless of its interactions. Tall (1x2) cells must carry at least 3 content blocks so the second row-unit holds content, not dead space; full-width cells spread content across both columns (caption vertically centered beside the miniature) instead of leaving one column empty.
 - Miniatures use the same design tokens (radius, accent, font scale) so cells feel like one product.
 - Motion is subtle and pauses on `prefers-reduced-motion`.
 - Responsive: 3 columns to 2 to 1 as width shrinks, hero cell spans first at each breakpoint.
