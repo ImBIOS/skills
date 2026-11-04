@@ -18,4 +18,4 @@ Reach for it when asked to create or iterate a SaaS logo, app icon, or brand mar
 
 ## It's working if
 
-Concepts span at least two construction families, the comparison sheet proves 16px legibility, and the exported PNGs have clean edges on light and dark backgrounds with SVG sources beside them.
+Concepts span at least two construction families, the comparison sheet proves 16px legibility, the light lockup is verified on a white tile (dark wordmark, brand-color mark) and the dark lockup on a near-black tile, with SVG sources beside every PNG.

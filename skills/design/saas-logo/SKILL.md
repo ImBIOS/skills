@@ -37,8 +37,8 @@ One geometry, arranged per use. Export each (SVG source plus PNG at 1024px on th
 
 - `mark.svg` / `mark.png`: bare mark, transparent, no padding.
 - `icon.svg` / `icon.png`: rounded app-icon tile (22 percent radius), 1024x1024.
-- `logo-light.svg` / `logo-light.png`: horizontal lockup (mark plus wordmark in Inter 600) for light backgrounds.
-- `logo-dark.svg` / `logo-dark.png`: same lockup for dark backgrounds.
+- `logo-light.svg` / `logo-light.png`: horizontal lockup (mark plus wordmark in Inter 600) for light backgrounds. Transparent background, dark wordmark (#111111), mark recolored to its brand ink (white-only marks go dark). Verify on a white tile, never on dark: a correct light lockup is unreadable on black.
+- `logo-dark.svg` / `logo-dark.png`: same lockup for dark backgrounds. Transparent background, white wordmark, mark as authored. Verify on a near-black tile.
 - `logo-mono.svg` / `logo-mono.png`: single-color version (black on transparent plus white on transparent) for print, emboss, favicon.
 - `social-avatar.png`: mark centered in the tile at avatar-safe padding, 512x512.
 

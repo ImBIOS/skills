@@ -18,4 +18,4 @@ Reach for it when asked to animate a share card or produce a looping social prev
 
 ## It's working if
 
-The clip runs under 3s, the end frame matches the static card, the loop restart is invisible, and MP4 plus GIF plus poster are all delivered with sane file sizes.
+The clip runs under 3s, the first frame already shows the header and card content (nothing fades in from empty), the end frame matches the static card, the loop restart is invisible, and MP4 plus GIF plus poster are all delivered with sane file sizes.
